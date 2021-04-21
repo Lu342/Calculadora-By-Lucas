@@ -217,7 +217,7 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
 
     public final void icon(JFrame frm){
         try {
-            frm.setIconImage(Toolkit.getDefaultToolkit().getImage("C:/Users/Lucas/Documents/NetBeansProjects/Calcv1/Imagens/calculadoraImage01.png"));
+            frm.setIconImage(Toolkit.getDefaultToolkit().getImage("C:/Users/Lucas/Documents/GitHub/Calculadora-By-Lucas/Calcv1/Imagens/calculadoraImage01.png"));
         } catch (Exception e) {
             System.out.println(e.toString());
         }
