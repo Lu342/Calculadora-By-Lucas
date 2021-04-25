@@ -1,13 +1,14 @@
 
 import java.awt.Toolkit;
+
 import javax.swing.JFrame;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 
 /**
  *
@@ -21,12 +22,13 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
 
     public Calc_3d_v01() {
         initComponents();
-        
+
         icon(this);
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
@@ -140,89 +142,95 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
 
         javax.swing.GroupLayout CalculadoraLayout = new javax.swing.GroupLayout(Calculadora);
         Calculadora.setLayout(CalculadoraLayout);
-        CalculadoraLayout.setHorizontalGroup(
-            CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CalculadoraLayout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
-                .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Exit_operacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(CalculadoraLayout.createSequentialGroup()
-                        .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Entrada_numberOne, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(CalculadoraLayout.createSequentialGroup()
-                                .addComponent(bottom_soma, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bottom_subtrair, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        CalculadoraLayout.setHorizontalGroup(CalculadoraLayout
+                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(CalculadoraLayout.createSequentialGroup().addContainerGap(53, Short.MAX_VALUE)
                         .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(CalculadoraLayout.createSequentialGroup()
-                                .addComponent(bottom_dividir, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bottom_multiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Entrada_numberTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(53, Short.MAX_VALUE))
-        );
-        CalculadoraLayout.setVerticalGroup(
-            CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CalculadoraLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Entrada_numberOne, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Entrada_numberTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bottom_subtrair)
-                    .addComponent(bottom_soma)
-                    .addComponent(bottom_dividir)
-                    .addComponent(bottom_multiplicar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Exit_operacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                                .addComponent(Exit_operacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 214,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(CalculadoraLayout.createSequentialGroup().addGroup(CalculadoraLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(Entrada_numberOne, javax.swing.GroupLayout.PREFERRED_SIZE, 104,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(CalculadoraLayout.createSequentialGroup()
+                                                .addComponent(bottom_soma, javax.swing.GroupLayout.PREFERRED_SIZE, 49,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(bottom_subtrair, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(CalculadoraLayout
+                                                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(CalculadoraLayout.createSequentialGroup()
+                                                        .addComponent(bottom_dividir,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE, 49,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(
+                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(bottom_multiplicar,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE, 49,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(Entrada_numberTwo, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        104, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(53, Short.MAX_VALUE)));
+        CalculadoraLayout.setVerticalGroup(CalculadoraLayout
+                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(CalculadoraLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Entrada_numberOne, javax.swing.GroupLayout.PREFERRED_SIZE, 37,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Entrada_numberTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 37,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(CalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(bottom_subtrair).addComponent(bottom_soma).addComponent(bottom_dividir)
+                                .addComponent(bottom_multiplicar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Exit_operacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 25,
+                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Calculadora, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Calculadora, javax.swing.GroupLayout.PREFERRED_SIZE, 210, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(Calculadora, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(Calculadora, javax.swing.GroupLayout.PREFERRED_SIZE, 210, Short.MAX_VALUE));
 
         Calculadora.getAccessibleContext().setAccessibleName("Calc");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bottom_subtrairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bottom_subtrairActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bottom_subtrairActionPerformed
+    private void bottom_subtrairActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bottom_subtrairActionPerformed
 
-    private void bottom_somaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bottom_somaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bottom_somaActionPerformed
+    }// GEN-LAST:event_bottom_subtrairActionPerformed
 
-    private void bottom_dividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bottom_dividirActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bottom_dividirActionPerformed
+    private void bottom_somaActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bottom_somaActionPerformed
 
-    private void bottom_multiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bottom_multiplicarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bottom_multiplicarActionPerformed
+    }// GEN-LAST:event_bottom_somaActionPerformed
 
-    private void Entrada_numberTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Entrada_numberTwoActionPerformed
-    }//GEN-LAST:event_Entrada_numberTwoActionPerformed
+    private void bottom_dividirActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bottom_dividirActionPerformed
 
-    public final void icon(JFrame frm){
+    }// GEN-LAST:event_bottom_dividirActionPerformed
+
+    private void bottom_multiplicarActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_bottom_multiplicarActionPerformed
+
+    }// GEN-LAST:event_bottom_multiplicarActionPerformed
+
+    private void Entrada_numberTwoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Entrada_numberTwoActionPerformed
+    }// GEN-LAST:event_Entrada_numberTwoActionPerformed
+
+    public final void icon(JFrame frm) {
         try {
-            frm.setIconImage(Toolkit.getDefaultToolkit().getImage("C:/Users/Lucas/Documents/GitHub/Calculadora-By-Lucas/Calcv1/Imagens/calculadoraImage01.png"));
+            frm.setIconImage(Toolkit.getDefaultToolkit().getImage(
+                    "C:/Users/Lucas/Documents/GitHub/Calculadora-By-Lucas/Calcv1/Imagens/calculadoraImage01.png"));
         } catch (Exception e) {
             System.out.println(e.toString());
         }
     }
-    
+
     public void operacoes_sem_erros() {
 
         try {
@@ -251,43 +259,44 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
         }
     }
 
-    private void bottom_somaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottom_somaMouseClicked
+    private void bottom_somaMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_bottom_somaMouseClicked
         operacao = "+";
         this.operacoes_sem_erros();
-    }//GEN-LAST:event_bottom_somaMouseClicked
+    }// GEN-LAST:event_bottom_somaMouseClicked
 
-    private void bottom_subtrairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottom_subtrairMouseClicked
+    private void bottom_subtrairMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_bottom_subtrairMouseClicked
         operacao = "-";
         this.operacoes_sem_erros();
-    }//GEN-LAST:event_bottom_subtrairMouseClicked
+    }// GEN-LAST:event_bottom_subtrairMouseClicked
 
-    private void bottom_dividirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottom_dividirMouseClicked
+    private void bottom_dividirMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_bottom_dividirMouseClicked
         operacao = "/";
         this.operacoes_sem_erros();
 
         if (this.Exit_operacoes.getText().equals("NaN") || this.Exit_operacoes.getText().equals("Infinity")) {
             Exit_operacoes.setText("0.0");
         }
-    }//GEN-LAST:event_bottom_dividirMouseClicked
+    }// GEN-LAST:event_bottom_dividirMouseClicked
 
-    private void bottom_multiplicarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottom_multiplicarMouseClicked
+    private void bottom_multiplicarMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_bottom_multiplicarMouseClicked
         operacao = "*";
         this.operacoes_sem_erros();
-    }//GEN-LAST:event_bottom_multiplicarMouseClicked
+    }// GEN-LAST:event_bottom_multiplicarMouseClicked
 
-    private void Entrada_numberOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Entrada_numberOneActionPerformed
+    private void Entrada_numberOneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Entrada_numberOneActionPerformed
 
-    }//GEN-LAST:event_Entrada_numberOneActionPerformed
+    }// GEN-LAST:event_Entrada_numberOneActionPerformed
 
-    private void Entrada_numberOneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Entrada_numberOneMouseClicked
+    private void Entrada_numberOneMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_Entrada_numberOneMouseClicked
         Entrada_numberOne.setText(null);
         Exit_operacoes.setText(null);
-    }//GEN-LAST:event_Entrada_numberOneMouseClicked
+    }// GEN-LAST:event_Entrada_numberOneMouseClicked
 
-    private void Entrada_numberTwoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Entrada_numberTwoMouseClicked
+    private void Entrada_numberTwoMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_Entrada_numberTwoMouseClicked
         Entrada_numberTwo.setText(null);
         Exit_operacoes.setText(null);
-    }//GEN-LAST:event_Entrada_numberTwoMouseClicked
+    }// GEN-LAST:event_Entrada_numberTwoMouseClicked
+
 
     public static void main(String args[]) {
 
