@@ -1,8 +1,5 @@
-
 import java.awt.Toolkit;
-
 import javax.swing.JFrame;
-
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -26,7 +23,6 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
         icon(this);
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -296,7 +292,6 @@ public class Calc_3d_v01 extends javax.swing.JFrame {
         Entrada_numberTwo.setText(null);
         Exit_operacoes.setText(null);
     }// GEN-LAST:event_Entrada_numberTwoMouseClicked
-
 
     public static void main(String args[]) {
 

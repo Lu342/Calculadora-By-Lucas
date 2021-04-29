@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "Calcv2/src"
+        "Calcv2/src",
+        "Calcv1/src"
     ]
 }
