@@ -1,6 +1,8 @@
 
 import static java.lang.Double.NaN;
 
+// import java.util.regex.Pattern;
+
 /**
  *
  * @author Lucas
@@ -14,7 +16,6 @@ public class Calc_3d_v02 extends javax.swing.JFrame {
         initComponents();
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -327,6 +328,8 @@ public class Calc_3d_v02 extends javax.swing.JFrame {
 
         } else if (operacao.equalsIgnoreCase("*")) {
             result = numberOne * numberTwo;
+        } else {
+            result = 0.0;
         }
         return result;
     }
@@ -443,11 +446,14 @@ public class Calc_3d_v02 extends javax.swing.JFrame {
     private void resultBottomMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_resultBottomMouseClicked
 
         checagemNumberTwo();
+
         while (result == 0.0) {
             result = operacoes(operacao, numberOne, numberTwo);
         }
+
         resultado = Double.toString(result);
         Entrada_Saida_numbers.setText(resultado);
+        // ContaInserida();
 
     }// GEN-LAST:event_resultBottomMouseClicked
 
@@ -462,6 +468,37 @@ public class Calc_3d_v02 extends javax.swing.JFrame {
 
         Entrada_Saida_numbers.setText(null);
     }// GEN-LAST:event_BottomCEActionPerformed
+
+    // private Double ContaInserida() {
+    // String input = Entrada_Saida_numbers.getText();
+
+    // String caracteres = "=-+. ";
+    // Double tot = 0.0;
+
+    // String[] spliter = input.split("[" + Pattern.quote(caracteres) + "]+");
+
+    // String pValor = spliter[0];
+    // numberOne = Double.parseDouble(pValor);
+    // String svalor = spliter[1];
+    // numberTwo = Double.parseDouble(svalor);
+
+    // Entrada_Saida_numbers.setText(pValor);
+    // if (input.equalsIgnoreCase("-")) {
+    // tot = numberOne - numberTwo;
+    // } else if (input.equalsIgnoreCase("+")) {
+    // tot = numberOne + numberTwo;
+    // } else if (input.equalsIgnoreCase("/")) {
+    // tot = numberOne / numberTwo;
+    // if (tot == NaN) {
+    // tot = 0.0;
+    // }
+    // } else if (input.equalsIgnoreCase("*")) {
+    // tot = numberOne * numberTwo;
+    // }
+
+    // return tot;
+
+    // }
 
     /**
      * @param args the command line arguments
