@@ -355,16 +355,7 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
 
         stringResult = Double.toString(result);
         inputOutputNumbers.setText(stringResult);
-        /*  ContaInserida(); */
 
-    }
-
-    private void buttonCActionPerformed(java.awt.event.ActionEvent evt) {
-        numberOne = 0.0;
-        numberTwo = 0.0;
-        result = 0.0;
-
-        inputOutputNumbers.setText(null);
     }
 
     private void numberOneMouseClicked(java.awt.event.MouseEvent evt) {
@@ -406,7 +397,15 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
     private void numberZeroMouseClicked(java.awt.event.MouseEvent evt) {
         this.current("0");
     }
-    
+
+    private void buttonCActionPerformed(java.awt.event.ActionEvent evt) {
+        numberOne = 0.0;
+        numberTwo = 0.0;
+        result = 0.0;
+
+        inputOutputNumbers.setText(null);
+    }
+
     private void buttonSubtractionActionPerformed(java.awt.event.ActionEvent evt) {}
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {}
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {}
@@ -414,37 +413,6 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
     private void inputOutputNumbersMouseClicked(java.awt.event.MouseEvent evt) {}
     private void inputOutputNumbersActionPerformed(java.awt.event.ActionEvent evt) {}
     private void buttonCMouseClicked(java.awt.event.MouseEvent evt) {} 
-
-/* 
-    private Double ContaInserida() {
-        String input = inputOutputNumbers.getText();
-
-        String caracteres = "=-+. ";
-        Double tot = 0.0;
-
-        String[] spliter = input.split("[" + Pattern.quote(caracteres) + "]+");
-
-        String pValor = spliter[0];
-            numberOne = Double.parseDouble(pValor);
-        String svalor = spliter[1];
-            numberTwo = Double.parseDouble(svalor);
-
-            inputOutputNumbers.setText(pValor);
-        if (input.equalsIgnoreCase("-")) {
-            tot = numberOne - numberTwo;
-        } else if (input.equalsIgnoreCase("+")) {
-            tot = numberOne + numberTwo;
-        } else if (input.equalsIgnoreCase("/")) {
-            tot = numberOne / numberTwo;
-        if (tot == NaN) {
-            tot = 0.0;
-        }
-        } else if (input.equalsIgnoreCase("*")) {
-            tot = numberOne * numberTwo;
-        }
-            return tot;
-    } 
- */
 
     /**
      * @param args the command line arguments
