@@ -49,45 +49,25 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
                 buttonSubtractionMouseClicked(evt);
             }
         });
-        buttonSubtraction.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSubtractionActionPerformed(evt);
-            }
-        });
-
+        
         buttonAddition .setText("+");
         buttonAddition .addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonAdditionMouseClicked(evt);
             }
         });
-        buttonAddition .addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonAdditionActionPerformed(evt);
-            }
-        });
-
+        
         buttonDivision.setText("/");
         buttonDivision.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonDivisionMouseClicked(evt);
             }
         });
-        buttonDivision.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonDivisionActionPerformed(evt);
-            }
-        });
-
+        
         buttonMultiplication.setText("*");
         buttonMultiplication.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonMultiplicationMouseClicked(evt);
-            }
-        });
-        buttonMultiplication.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonMultiplicationActionPerformed(evt);
             }
         });
 
@@ -104,21 +84,11 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
                 buttonCMouseClicked(evt);
             }
         });
-        buttonC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonCActionPerformed(evt);
-            }
-        });
 
         inputOutputNumbers.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         inputOutputNumbers.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 inputOutputNumbersMouseClicked(evt);
-            }
-        });
-        inputOutputNumbers.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputOutputNumbersActionPerformed(evt);
             }
         });
 
@@ -189,6 +159,42 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
         zero.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 numberZeroMouseClicked(evt);
+            }
+        });
+
+        buttonSubtraction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSubtractionActionPerformed(evt);
+            }
+        });
+        
+        buttonAddition .addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAdditionActionPerformed(evt);
+            }
+        });
+        
+        buttonDivision.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonDivisionActionPerformed(evt);
+            }
+        });
+        
+        buttonMultiplication.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonMultiplicationActionPerformed(evt);
+            }
+        });
+        
+        buttonC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCActionPerformed(evt);
+            }
+        });
+
+        inputOutputNumbers.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inputOutputNumbersActionPerformed(evt);
             }
         });
 
