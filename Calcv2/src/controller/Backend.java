@@ -1,10 +1,9 @@
 public class Backend(){
 
-    double result, numberOne, numberTwo;
-    String operation, stringResult;
-
+    public Backend (){}
 
     public double operations(String operation, double numberOne, double numberTwo) {
+        double result;
         if (operation.equalsIgnoreCase("+")) {
             result = addition(numberOne, numberTwo);
         } else if (operation.equalsIgnoreCase("-")) {
@@ -47,30 +46,34 @@ public class Backend(){
         return value;
     }
 
-    public boolean firstNumberFilter(String value) {
-        operation = value;
+    public double firstNumberFilter(String value) {
+        String operation = value;
+        double numberOne;
+        JTextField field;
         try {
             String firstNumber = this.current("");
-            inputOutputNumbers.setText("");
+            field.setText("");
             numberOne = Double.parseDouble(firstNumber);
 
         } catch (NumberFormatException e) {
-            inputOutputNumbers.setText(null);
+            field.setText(null);
         }
 
-        return true;
+        return numberOne;
     }
 
-    public boolean secondNumberFilter() {
+    public double secondNumberFilter() {
+        double numberTwo;
+        JTextField field;
         try {
             String secondNumber = this.current("");
-            inputOutputNumbers.setText("");
+            field.setText("");
             numberTwo = Double.parseDouble(secondNumber);
 
         } catch (NumberFormatException e) {
-            inputOutputNumbers.setText(null);
+            field.setText(null);
         }
 
-        return true;
+        return numberTwo;
     } 
 } 
