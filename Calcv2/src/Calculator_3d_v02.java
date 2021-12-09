@@ -1,4 +1,5 @@
 import static java.lang.Double.NaN;
+import controller.Backend.class;
 
 /**
  *
@@ -8,6 +9,8 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
 
     double result, numberOne, numberTwo;
     String operation, stringResult;
+
+    Backend op = new Backend();  
 
     public Calculator_3d_v02() {
         initComponents();
@@ -278,41 +281,32 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
         pack();
     }
 
-    public String current(String number) {
-        inputOutputNumbers.setText(inputOutputNumbers.getText() + number);
-
-        String current = inputOutputNumbers.getText();
-
-        return current;
-    }
-
-
-
     private void buttonSubtractionMouseClicked(java.awt.event.MouseEvent evt) {
-        firstNumberFilter("-");
+        op.firstNumberFilter(inputOutputNumbers);
+        operation = "-";
     }
 
     private void buttonAdditionMouseClicked(java.awt.event.MouseEvent evt) {
+        op.firstNumberFilter(inputOutputNumbers);
         operation = "+";
-        firstNumberFilter();
     }
     
     private void buttonDivisionMouseClicked(java.awt.event.MouseEvent evt) {
+        op.firstNumberFilter(inputOutputNumbers);
         operation = "/";
-        firstNumberFilter();
     }
 
     private void buttonMultiplicationMouseClicked(java.awt.event.MouseEvent evt) {
+        op.firstNumberFilter(inputOutputNumbers);
         operation = "*";
-        firstNumberFilter();
     }
 
     private void resultButtonMouseClicked(java.awt.event.MouseEvent evt) {
 
-        secondNumberFilter();
+        op.secondNumberFilter(inputOutputNumbers);
 
         while (result == 0.0) {
-            result = operations(operation, numberOne, numberTwo);
+            result = op.operations(operation, numberOne, numberTwo);
         }
 
         stringResult = Double.toString(result);
@@ -321,43 +315,43 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
     }
 
     private void numberOneMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("1");
+        op.current("1", inputOutputNumbers);
     }
 
     private void numberTwoMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("2");
+        op.current("2", inputOutputNumbers);
     }
 
     private void numberThreeMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("3");
+        op.current("3",inputOutputNumbers);
     }
 
     private void numberFourMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("4");
+        op.current("4",inputOutputNumbers);
     }
 
     private void numberFiveMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("5");
+        op.current("5",inputOutputNumbers);
     }
 
     private void numberSixMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("6");
+        op.current("6",inputOutputNumbers);
     }
 
     private void numberSevenMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("7");
+        op.current("7", inputOutputNumbers);
     }
 
     private void numberEightMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("8");
+        op.current("8",inputOutputNumbers);
     }
 
     private void numberNineMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("9");
+        op.current("9",inputOutputNumbers);
     }
 
     private void numberZeroMouseClicked(java.awt.event.MouseEvent evt) {
-        this.current("0");
+        op.current("0",inputOutputNumbers);
     }
 
     private void buttonCActionPerformed(java.awt.event.ActionEvent evt) {

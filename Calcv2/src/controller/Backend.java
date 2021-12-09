@@ -1,6 +1,9 @@
-public class Backend(){
+import javax.swing.JTextField;
+import static java.lang.Double.NaN;
 
-    public Backend (){}
+public class Backend{
+
+    public Backend(){}
 
     public double operations(String operation, double numberOne, double numberTwo) {
         double result;
@@ -46,12 +49,10 @@ public class Backend(){
         return value;
     }
 
-    public double firstNumberFilter(String value) {
-        String operation = value;
-        double numberOne;
-        JTextField field;
+    public double firstNumberFilter(JTextField field) {
+        double numberOne = 0.0;
         try {
-            String firstNumber = this.current("");
+            String firstNumber = this.current("", field);
             field.setText("");
             numberOne = Double.parseDouble(firstNumber);
 
@@ -62,11 +63,10 @@ public class Backend(){
         return numberOne;
     }
 
-    public double secondNumberFilter() {
-        double numberTwo;
-        JTextField field;
+    public double secondNumberFilter(JTextField field) {
+        double numberTwo = 0.0;
         try {
-            String secondNumber = this.current("");
+            String secondNumber = this.current("", field);
             field.setText("");
             numberTwo = Double.parseDouble(secondNumber);
 
@@ -76,4 +76,12 @@ public class Backend(){
 
         return numberTwo;
     } 
+
+    public String current(String number, JTextField field) {
+        field.setText(field.getText() + number);
+
+        String current = field.getText();
+
+        return current;
+    }
 } 
