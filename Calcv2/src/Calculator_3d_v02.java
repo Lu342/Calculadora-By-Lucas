@@ -288,21 +288,45 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
 
     public double operations(String operation, double numberOne, double numberTwo) {
         if (operation.equalsIgnoreCase("+")) {
-            result = numberOne + numberTwo;
+            result = addition(numberOne, numberTwo);
         } else if (operation.equalsIgnoreCase("-")) {
-            result = numberOne - numberTwo;
+            result = subtraction(numberOne, numberTwo);
         } else if (operation.equalsIgnoreCase("/")) {
-            result = numberOne / numberTwo;
+            result = division(numberOne, numberTwo);
             if (result == NaN) {
                 result = 0.0;
             }
 
         } else if (operation.equalsIgnoreCase("*")) {
-            result = numberOne * numberTwo;
+            result = multiplication(numberOne, numberTwo);
         } else {
             result = 0.0;
         }
         return result;
+    }
+
+    private Double addition(double numberOne, double numberTwo){
+       double value = numberOne + numberTwo;
+
+        return value;
+    }
+
+    private Double subtraction(double numberOne, double numberTwo){
+        double value = numberOne - numberTwo;
+
+        return value;
+    }
+
+    private Double multiplication(double numberOne, double numberTwo){
+        double value = numberOne * numberTwo;
+
+        return value;
+    }
+
+    private Double division(double numberOne, double numberTwo){
+        double value = numberOne / numberTwo;
+
+        return value;
     }
 
     public boolean secondNumberFilter() {
@@ -416,8 +440,8 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
     private void buttonAdditionActionPerformed(java.awt.event.ActionEvent evt) {}
     private void buttonDivisionActionPerformed(java.awt.event.ActionEvent evt) {}
     private void buttonMultiplicationActionPerformed(java.awt.event.ActionEvent evt) {}
-    private void inputOutputNumbersMouseClicked(java.awt.event.MouseEvent evt) {}
     private void inputOutputNumbersActionPerformed(java.awt.event.ActionEvent evt) {}
+    private void inputOutputNumbersMouseClicked(java.awt.event.MouseEvent evt) {}
     private void buttonCMouseClicked(java.awt.event.MouseEvent evt) {} 
 
     /**
