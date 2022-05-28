@@ -1,9 +1,12 @@
+package controller;
+
 import javax.swing.JTextField;
 import static java.lang.Double.NaN;
 
-public class Backend{
+public class Backend {
 
-    public Backend(){}
+    public Backend() {
+    }
 
     public double operations(String operation, double numberOne, double numberTwo) {
         double result;
@@ -25,25 +28,25 @@ public class Backend{
         return result;
     }
 
-    private Double addition(double numberOne, double numberTwo){
-       double value = numberOne + numberTwo;
+    private Double addition(double numberOne, double numberTwo) {
+        double value = numberOne + numberTwo;
 
         return value;
     }
 
-    private Double subtraction(double numberOne, double numberTwo){
+    private Double subtraction(double numberOne, double numberTwo) {
         double value = numberOne - numberTwo;
 
         return value;
     }
 
-    private Double multiplication(double numberOne, double numberTwo){
+    private Double multiplication(double numberOne, double numberTwo) {
         double value = numberOne * numberTwo;
 
         return value;
     }
 
-    private Double division(double numberOne, double numberTwo){
+    private Double division(double numberOne, double numberTwo) {
         double value = numberOne / numberTwo;
 
         return value;
@@ -75,7 +78,7 @@ public class Backend{
         }
 
         return numberTwo;
-    } 
+    }
 
     public String current(String number, JTextField field) {
         field.setText(field.getText() + number);
@@ -84,4 +87,4 @@ public class Backend{
 
         return current;
     }
-} 
+}

@@ -1,3 +1,4 @@
+
 import static java.lang.Double.NaN;
 import controller.Backend;
 
@@ -306,28 +307,28 @@ public class Calculator_3d_v02 extends javax.swing.JFrame {
     }
 
     private void buttonSubtractionMouseClicked(java.awt.event.MouseEvent evt) {
-        op.firstNumberFilter(inputOutputNumbers);
+        numberOne = op.firstNumberFilter(inputOutputNumbers);
         operation = "-";
     }
 
     private void buttonAdditionMouseClicked(java.awt.event.MouseEvent evt) {
-        op.firstNumberFilter(inputOutputNumbers);
+        numberOne = op.firstNumberFilter(inputOutputNumbers);
         operation = "+";
     }
 
     private void buttonDivisionMouseClicked(java.awt.event.MouseEvent evt) {
-        op.firstNumberFilter(inputOutputNumbers);
+        numberOne = op.firstNumberFilter(inputOutputNumbers);
         operation = "/";
     }
 
     private void buttonMultiplicationMouseClicked(java.awt.event.MouseEvent evt) {
-        op.firstNumberFilter(inputOutputNumbers);
+        numberOne = op.firstNumberFilter(inputOutputNumbers);
         operation = "*";
     }
 
     private void resultButtonMouseClicked(java.awt.event.MouseEvent evt) {
 
-        op.secondNumberFilter(inputOutputNumbers);
+        numberTwo = op.secondNumberFilter(inputOutputNumbers);
 
         while (result == 0.0) {
             result = op.operations(operation, numberOne, numberTwo);
